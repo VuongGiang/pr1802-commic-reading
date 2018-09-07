@@ -3,6 +3,7 @@ en:
     home:
       welcome: 'Welcome to Reading Comic Online!'
       top: 'Top Ratings'
+      recent: 'Recent comics'
 
   authors:
     index:

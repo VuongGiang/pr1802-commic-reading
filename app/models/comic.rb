@@ -20,6 +20,8 @@ class Comic < ApplicationRecord
   
   scope :rate_dsc, ->{order average_ratings: :desc}
 
+  scope :most_recent, ->{order(created_at: :desc).limit(10)}
+
   private
   def picture_size
     if picture.size > 5.megabytes

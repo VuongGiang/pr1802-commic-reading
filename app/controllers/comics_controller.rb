@@ -7,6 +7,7 @@ class ComicsController < ApplicationController
       @comics = @category&.comics || Comic.all
     end
     @comics = @comics.rate_dsc
+    @comicss = @comics.most_recent
   end
 
   def new

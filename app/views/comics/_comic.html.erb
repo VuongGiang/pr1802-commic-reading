@@ -2,6 +2,9 @@
   <div class='title'>
     <%= link_to comic.title, comic %>
   </div>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(comic.created_at) %> ago.
+  </span>
   <div class='content-comic'>
     <%= t '.intro' %>
     <%= comic.content %>
